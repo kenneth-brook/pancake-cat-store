@@ -7,12 +7,14 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require("dotenv").config() // Load environment variables
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Pancake Cat`, // Updated title
+    description: `The ultimate meme-worthy, gamer-centric merch store.`,
+    author: `@pancakecat`,
+    siteUrl: `https://pancakecat.com/`, // Updated site URL
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -28,15 +30,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Pancake Cat`,
+        short_name: `PancakeCat`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        background_color: `#FFD166`,
+        theme_color: `#8B5E34`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `img/pcclogo.png`, // Replace with your actual logo path
+      },
+    },
+    {
+      resolve: `gatsby-source-shopify`,
+      options: {
+        storeUrl: process.env.SHOPIFY_STORE_URL, // Full Shopify store URL
+        password: process.env.SHOPIFY_PASSWORD, // This needs to match the env var
+        apiVersion: `2023-01`, // Use the latest stable Shopify API version
       },
     },
   ],
