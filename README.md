@@ -2,7 +2,7 @@
 
 🚀 _The ultimate meme-worthy, gamer-centric merch store built with Gatsby, Shopify, and Sanity._
 
-&#x20;_(Replace with actual logo/image)_
+![Pancake Cat Logo](https://raw.githubusercontent.com/kenneth-brook/pancake-cat-store/refs/heads/main/img/pcclogo.png)
 
 ---
 
@@ -66,8 +66,6 @@ The site should be live at [**http://localhost:8000**](http://localhost:8000) �
 ---
 
 ## **📸 Screenshots & Demo**
-
-_(Add screenshots or GIFs once the UI is built! Example placeholders below.)_
 
 | Home Page | Product Page | Checkout |
 | --------- | ------------ | -------- |
