@@ -2,7 +2,9 @@
 
 🚀 _The ultimate meme-worthy, gamer-centric merch store built with Gatsby, Shopify, and Sanity._
 
-![Pancake Cat Logo](https://raw.githubusercontent.com/kenneth-brook/pancake-cat-store/refs/heads/main/img/pcclogo.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kenneth-brook/pancake-cat-store/refs/heads/main/img/pcclogo.png" alt="Pancake Cat Logo" width="300"/>
+</p>
 
 ---
 
