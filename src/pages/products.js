@@ -29,7 +29,7 @@ const ProductsPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allShopifyProduct {
+    allShopifyProduct(filter: { tags: { in: ["Pancake-Cat"] } }) {
       edges {
         node {
           title
