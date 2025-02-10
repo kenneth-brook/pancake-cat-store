@@ -17,6 +17,7 @@ module.exports = {
     siteUrl: `https://pancakecat.com/`, // Updated site URL
   },
   plugins: [
+	`gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
